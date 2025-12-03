@@ -1,0 +1,120 @@
+/* ============================================================
+   ZIPY GAMES – GAME CARD STYLES
+   ============================================================ */
+
+:root {
+    --neon-color: #00eaff;
+    --bg-dark: #111;
+    --text-light: #fff;
+    --primary: #00eaff;
+}
+
+/* ==== GAME GRID ==== */
+.game-grid {
+    display: grid;
+    gap: 25px;
+    padding: 30px 20px;
+    grid-template-columns: repeat(2, 1fr); /* Mobile default: 3 cards */
+}
+
+/* Tablets & Medium Devices */
+@media (min-width: 768px) {
+    .game-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Large Screens */
+@media (min-width: 1024px) {
+    .game-grid {
+        grid-template-columns: repeat(6, 1fr); /* Desktop: 6 cards */
+    }
+}
+
+/* ==== GAME CARD ==== */
+.game-card {
+    background: #0d0d0d;
+    border: 2px solid var(--neon-color);
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 0 12px #00eaff50;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hover glow + lift effect */
+.game-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 18px var(--neon-color);
+    border-color: #00ffff;
+}
+
+/* Add subtle neon glow inside */
+.game-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at top, #00eaff22, transparent);
+    pointer-events: none;
+}
+
+/* ==== THUMBNAIL IMAGE ==== */
+.game-thumb img {
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid var(--neon-color);
+    transition: 0.25s;
+}
+
+/* Image Zoom on Hover */
+.game-card:hover .game-thumb img {
+    transform: scale(1.05);
+}
+
+/* ==== TITLE ==== */
+.game-title {
+    margin: 12px 0;
+    font-size: 1.1rem;
+    color: var(--primary);
+    text-shadow: 0 0 8px var(--neon-color);
+    height: 40px; /* keeps titles aligned */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ==== PLAY BUTTON ==== */
+.play-btn {
+    margin-top: 8px;
+    width: 100%;
+    padding: 8px 0;
+    background: var(--primary);
+    color: #000;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.9rem;
+    transition: 0.25s;
+}
+
+.play-btn:hover {
+    background: #00ffff;
+    box-shadow: 0 0 10px var(--neon-color);
+}
+
+/* ==== SMALLER MOBILE ADJUSTMENTS ==== */
+@media (max-width: 420px) {
+    .play-btn {
+        font-size: 0.75rem;
+        padding: 7px 0;
+    }
+
+    .game-card {
+        padding: 12px;
+    }
+}

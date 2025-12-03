@@ -1,0 +1,159 @@
+<header>
+  <style>
+    :root {
+      --neon-color: #00eaff;
+      --bg-dark: #111;
+      --text-light: #fff;
+      --primary: #00eaff;
+      --header-h: 70px;
+    }
+
+    body {
+      font-family: 'Orbitron', Arial, sans-serif;
+      padding-top: var(--header-h);
+      margin: 0;
+      background: var(--bg-dark);
+      color: var(--text-light);
+    }
+
+    header {
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background: var(--bg-dark);
+      z-index: 1000;
+    }
+
+    .header-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      height: var(--header-h);
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo-img { width: 45px; }
+    .company-name {
+      font-size: 1.5rem;
+      color: var(--primary);
+      text-shadow: 0 0 8px var(--neon-color);
+    }
+
+    /* Desktop search bar */
+    #desktopSearchBar {
+      flex: 1;
+      max-width: 400px;
+    }
+
+    #desktopSearchBar input {
+      width: 100%;
+      padding: 8px 12px;
+      border-radius: 8px;
+      border: 2px solid var(--primary);
+      background: #0f0f0f;
+      color: var(--text-light);
+      font-family: 'Orbitron', Arial, sans-serif;
+      font-size: 0.9rem;
+      box-sizing: border-box;
+    }
+
+    /* Mobile toggle button */
+    .search-toggle {
+      display: none;
+      font-size: 1.5rem;
+      background: none;
+      border: none;
+      color: var(--primary);
+      cursor: pointer;
+    }
+
+    /* Mobile search bar */
+    #mobileSearchBar {
+      display: none;
+      width: 100%;
+      padding: 10px 20px;
+      background: var(--bg-dark);
+      position: fixed;
+      top: var(--header-h);
+      left: 0;
+      right: 0;
+      z-index: 1100;
+    }
+
+    #mobileSearchBar input {
+      width: 100%;
+      padding: 8px 12px;
+      border-radius: 8px;
+      border: 2px solid var(--primary);
+      background: #0f0f0f;
+      color: var(--text-light);
+      font-family: 'Orbitron', Arial, sans-serif;
+      font-size: 0.9rem;
+      box-sizing: border-box;
+    }
+
+    /* Zigzag */
+    svg.zigzag-bottom { width: 100%; height: 10px; }
+    polyline { fill: none; stroke: var(--neon-color); stroke-width: 2; filter: drop-shadow(0 0 1px var(--neon-color)); }
+
+    /* Responsive */
+    @media(max-width: 768px){
+      #desktopSearchBar { display: none; }   /* hide desktop search on mobile */
+      .search-toggle { display: block; }
+    }
+
+    @media(max-width: 480px){
+      .company-name { font-size: 1.2rem; }
+    }
+  </style>
+
+  <div class="header-container">
+    <div class="brand">
+      <img src="assets/logo.png" class="logo-img" alt="ZIPY GAMES Logo">
+      <h1 class="company-name">ZIPY GAMES</h1>
+    </div>
+
+    <!-- Desktop search bar -->
+    <div id="desktopSearchBar">
+      <input type="text" placeholder="Search games..." class="search-input">
+    </div>
+
+    <!-- Mobile search toggle -->
+    <button class="search-toggle" id="searchToggle">🔍</button>
+  </div>
+
+  <svg class="zigzag-bottom" viewBox="0 0 100 10" preserveAspectRatio="none">
+    <polyline points="0,10 10,0 20,10 30,0 40,10 50,0 60,10 70,0 80,10 90,0 100,10"></polyline>
+  </svg>
+</header>
+
+<!-- Mobile search bar OUTSIDE header -->
+<div id="mobileSearchBar">
+  <input type="text" placeholder="Search games..." class="search-input">
+</div>
+
+<script>
+  const searchToggle = document.getElementById('searchToggle');
+  const mobileSearchBar = document.getElementById('mobileSearchBar');
+
+  searchToggle.addEventListener('click', () => {
+    mobileSearchBar.style.display = mobileSearchBar.style.display === 'block' ? 'none' : 'block';
+    if(mobileSearchBar.style.display === 'block'){
+      mobileSearchBar.querySelector('input').focus();
+    }
+  });
+
+  // Close mobile search when clicking outside
+  document.addEventListener('click', e => {
+    if(!mobileSearchBar.contains(e.target) && !searchToggle.contains(e.target)){
+      mobileSearchBar.style.display = 'none';
+    }
+  });
+</script>

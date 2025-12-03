@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZIPY GAMES - Play Online Browser Games</title>
+    
+    <!-- Primary Meta Tags -->
+    <meta name="description" content="ZIPY GAMES - Play your favorite online games directly in your browser. Enjoy arcade, action, puzzle, and more gaming genres for free.">
+    <meta name="keywords" content="online games, browser games, free games, arcade games, puzzle games, action games, ZIPY GAMES">
+    <meta name="author" content="Microbuzz Tech">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="ZIPY GAMES - Play Online Browser Games">
+    <meta property="og:description" content="Enjoy free online games on ZIPY GAMES. Play arcade, action, puzzle, and more directly in your browser.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.zipygames.com">
+    <meta property="og:image" content="https://www.zipygames.com/assets/logo.png">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ZIPY GAMES - Play Online Browser Games">
+    <meta name="twitter:description" content="Enjoy free online games on ZIPY GAMES. Play arcade, action, puzzle, and more directly in your browser.">
+    <meta name="twitter:image" content="https://www.zipygames.com/assets/logo.png">
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/logo.png" type="image/png">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="games.css">
+
+    <!-- Inline Basic CSS -->
+    <style>
+        body {
+            font-family: 'Orbitron', Arial, sans-serif;
+            background:#111;
+            color:#fff;
+            padding-top:70px; /* header height */
+            text-align:center;
+            margin:0;
+        }
+        .content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 50px 20px;
+        }
+        .content h2 {
+            font-size:2rem;
+            margin-bottom:15px;
+            color:#00eaff;
+            text-shadow:0 0 8px #00eaff;
+        }
+        .content p {
+            font-size:1.1rem;
+            color:#ccc;
+            line-height:1.6;
+        }
+        a {
+            color:#00eaff;
+            text-decoration:none;
+        }
+        a:hover {
+            text-decoration:underline;
+        }
+    </style>
+
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "ZIPY GAMES",
+      "url": "https://www.zipygames.com",
+      "description": "Play your favorite online games directly in your browser. Enjoy arcade, action, puzzle, and more gaming genres for free.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Microbuzz Tech",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.zipygames.com/assets/logo.png"
+        }
+      }
+    }
+    </script>
+</head>
+<body>
+
+    <!-- Header -->
+    <div id="header"></div>
+
+    <!-- Main Content -->
+    <section class="content">
+        <h2>Welcome to ZIPY GAMES</h2>
+        <p>Play your favorite online games directly in your browser. Discover exciting arcade, action, puzzle, and adventure games for free. No downloads, no installation—just pure fun!</p>
+        <p>Search and explore games by genre, popularity, or newest releases to find your next favorite game!</p>
+    </section>
+
+    <section class="content">
+        <h2>Popular Games</h2>
+
+        <div id="gamesContainer" class="game-grid"></div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <div id="footer"></div>
+
+    <!-- Load Header and Footer -->
+    <script>
+        async function loadHTML(id, file){
+            const res = await fetch(file);
+            const html = await res.text();
+            document.getElementById(id).innerHTML = html;
+        }
+
+        loadHTML('header','header.html');
+        loadHTML('footer','footer.html');
+    </script>
+    <script type="module" src="config.js"></script>
+    <script type="module" src="gamesApi.js"></script>
+</body>
+</html>

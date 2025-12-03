@@ -1,0 +1,37 @@
+<div id="header"></div>
+
+<div class="dev-container">
+  <h1>Game Page Under Development</h1>
+  <p>This container loaded successfully. Game UI will be added later.</p>
+</div>
+
+<div id="footer"></div>
+
+<script>
+  async function loadHTML(id, file) {
+    try {
+      // ALWAYS load from ROOT so it works everywhere
+      const res = await fetch("/" + file);
+      if (!res.ok) return;
+      document.getElementById(id).innerHTML = await res.text();
+    } catch (e) {
+      console.warn("Missing:", file);
+    }
+  }
+
+  loadHTML("header", "header.html");
+  loadHTML("footer", "footer.html");
+</script>
+
+<style>
+  .dev-container {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 30px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 12px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+  }
+</style>

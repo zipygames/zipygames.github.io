@@ -1,0 +1,49 @@
+:root {
+    --neon-color: #00eaff;
+    --bg-dark: #111;
+    --text-light: #fff;
+    --primary: #00eaff;
+    --header-h: 70px;
+}
+
+/* ===== RESET ===== */
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+    font-family: 'Orbitron', Arial, sans-serif;
+    background: var(--bg-dark);
+    color: var(--text-light);
+    padding-top: var(--header-h);
+}
+
+/* ===== MAIN CONTENT ===== */
+.content {
+    text-align:center;
+    padding:50px 20px;
+}
+.content h2 {
+    font-size:2rem;
+    margin-bottom:15px;
+    color: var(--primary);
+    text-shadow: 0 0 8px var(--neon-color);
+}
+.content p {
+    font-size:1rem;
+    color:#ccc;
+    line-height:1.6;
+}
+
+/* ===== BUTTONS / LINKS (example global styles) ===== */
+a {
+    color: var(--primary);
+    text-decoration:none;
+    transition: color 0.3s;
+}
+a:hover { color:#00ffea; }
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:768px){
+    .content h2 { font-size:1.7rem; }
+}
+@media(max-width:480px){
+    .content h2 { font-size:1.5rem; }
+}
