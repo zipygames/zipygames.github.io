@@ -4,7 +4,7 @@
 
 const GAME_DATA = {
   title: "Level Devil",
-  developer: "zipy Games",
+  developer: "Zipy Games",
   rating: "⭐ 4.2",
   ageRating: "Rated for 3+",
   plays: "100K+ Plays",
@@ -22,7 +22,7 @@ const GAME_DATA = {
   ],
 
   screenshots: [
-    "sl/img_leveldevil.jpg",
+    "sl/banner.jpg",
     "sl/snap1.png",
     "sl/snap2.jpg",
     "sl/snap3.jpg",
