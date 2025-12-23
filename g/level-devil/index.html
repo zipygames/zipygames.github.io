@@ -132,13 +132,15 @@ main {
 }
 .floating-play:hover { transform: scale(1.1); }
 /* --- Ads --- */
-#banner1, #banner2 {
+.ad-slot {
   width: 100%;
-  max-width: 468px;
   min-height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 30px auto;
-  text-align: center;
 }
+
 /* --- Screenshots --- */
 .screenshots {
   display: flex; gap: 15px;
@@ -311,7 +313,10 @@ main {
     <a href="#" class="play-btn">▶ Play Now</a>
   </div>
 
-  <div id="banner1"></div>
+  <div class="ad-slot">
+    <div id="banner1"></div>
+  </div>
+
 
   <!-- Screenshots -->
   <div class="screenshots" data-animate></div>
@@ -330,7 +335,10 @@ main {
     <ul class="features"></ul>
   </div>
 
-  <div id="banner2"></div>
+  <div class="ad-slot">
+    <div id="banner2"></div>
+  </div>
+
 
   <!-- Related Games -->
   <div class="related-games" data-animate>
@@ -338,7 +346,10 @@ main {
     <div class="game-grid"></div>
   </div>
 
-  <div id="banner3"></div>
+  <div class="ad-slot">
+    <div id="banner3"></div>
+  </div>
+
 </main>
 
 <div id="footer-container"></div>
