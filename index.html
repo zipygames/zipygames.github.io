@@ -1,122 +1,358 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Zipy Games by Microbuzz Tech</title>
-  
-  <!-- ✅ SEO Meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- title and seo -->
+  <title>Free Online Games at Zipy - Play Now!</title>
   <meta name="description" content="Play free online games instantly. Action, racing, puzzle, and multiplayer games — all in one place. Powered by Microbuzz Tech."/>
   <meta name="keywords" content="online games, free games, play games, racing games, action games, puzzle games, multiplayer games"/>
   <meta property="og:title" content="Play Free Online Games | Zipy Games by Microbuzz Tech"/>
   <meta property="og:description" content="Enjoy free online games with no downloads. Play racing, action, puzzle and multiplayer games instantly."/>
   <meta property="og:type" content="website"/>
   <meta property="og:image" content="https://zipygames.github.io/g/level-devil/sl/banner.jpg"/>
-  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="icon" href="assets/favicon.ico" type="image/png">
 
-  <link rel="manifest" href="zipygames.webmanifest">
-    <link rel="icon" href="assets/images/app-icon-16.png" type="image/png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="favicon.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="favicon.png">
-    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="favicon.png">
-    <link rel="apple-touch-icon-precomposed" href="assets/images/app-icon-57.png">
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <!-- Fonts + CSS -->
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600&family=Orbitron:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- style call -->
+  <link rel="stylesheet" href="style.css" />
+
 </head>
 <body>
 
-  <!-- ================= HEADER ================= -->
-  <header>
-    <div class="brand">
-      <div class="company-logo"></div>
-      <h1 class="company-name"></h1>
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">
+      <img src="assets/logo.png" alt="Zipy Logo" class="logo-img">
+      <span class="logo-text">Zipy Games</span>
     </div>
-    <div class="search-bar">
-      <input type="text" id="gameSearch" placeholder="Search games..." />
-    </div>
-    <button class="search-toggle" onclick="toggleSearch()">🔍</button>
   </header>
-  
-  <!-- ================= HERO ================= -->
-  <section class="hero home-bg">
-    <div class="hero-content">
-      <h2>Welcome to <span class="company-name"></span></h2>
-      <p class="hero-desc">Play, explore, and enjoy awesome games!</p>
+
+  <!-- Games Section -->
+  <section class="section">
+    <h2>Popular Games</h2>
+
+    <div class="grid games-grid">
+
+      <a href="g/2048/" class="game-link">
+        <div class="game-card">
+          <img src="g/2048/sl/banner.png" alt="2048">
+          <h3>2048</h3>
+        </div>
+      </a>
+
+      <a href="g/block-the-pig/" class="game-link">
+        <div class="game-card">
+          <img src="g/block-the-pig/sl/banner.jpg" alt="Block The Pig">
+          <h3>Block The Pig</h3>
+        </div>
+      </a>
+
+      <a href="g/chess/" class="game-link">
+        <div class="game-card">
+          <img src="g/chess/sl/banner.jpg" alt="Chess">
+          <h3>Master Chess</h3>
+        </div>
+      </a>
+
+      <a href="g/eggy-car/" class="game-link">
+        <div class="game-card">
+          <img src="g/eggy-car/sl/banner.jpg" alt="Eggy Car">
+          <h3>Eggy Car</h3>
+        </div>
+      </a>
+
+      <a href="g/hextris/" class="game-link">
+        <div class="game-card">
+          <img src="g/hextris/sl/banner.png" alt="Hextris">
+          <h3>Hextris</h3>
+        </div>
+      </a>
+
+      <a href="g/hill-climb-racing/" class="game-link">
+        <div class="game-card">
+          <img src="g/hill-climb-racing/sl/banner.jpg" alt="Hill Climb Racing">
+          <h3>Hill Climb Racing</h3>
+        </div>
+      </a>
+
+      <a href="g/level-devil/" class="game-link">
+        <div class="game-card">
+          <img src="g/level-devil/sl/banner.jpg" alt="Level Devil">
+          <h3>Level Devil</h3>
+        </div>
+      </a>
+
+      <a href="g/mr-bullet-c2/" class="game-link">
+        <div class="game-card">
+          <img src="g/mr-bullet-c2/sl/banner.jpg" alt="Mr Bullet C2">
+          <h3>Mr Bullet C2</h3>
+        </div>
+      </a>
+
+      <a href="g/ovo/" class="game-link">
+        <div class="game-card">
+          <img src="g/ovo/sl/banner.png" alt="OvO">
+          <h3>OvO</h3>
+        </div>
+      </a>
+
+      <a href="g/polyominoblocks/" class="game-link">
+        <div class="game-card">
+          <img src="g/polyominoblocks/sl/banner.jpg" alt="Polyomino">
+          <h3>Polyomino</h3>
+        </div>
+      </a>
+
+      <a href="g/puzzle/" class="game-link">
+        <div class="game-card">
+          <img src="g/puzzle/sl/banner.jpg" alt="Puzzle">
+          <h3>Puzzle</h3>
+        </div>
+      </a>
+
+      <a href="g/slither-io/" class="game-link">
+        <div class="game-card">
+          <img src="g/slither-io/sl/banner.png" alt="Slither.io">
+          <h3>Slither.io</h3>
+        </div>
+      </a>
+
+      <a href="g/snakegame/" class="game-link">
+        <div class="game-card">
+          <img src="g/snakegame/sl/banner.jpg" alt="Snake Game">
+          <h3>Snake Game</h3>
+        </div>
+      </a>
+
+      <a href="g/spidercard/" class="game-link">
+        <div class="game-card">
+          <img src="g/spidercard/sl/banner.jpg" alt="Spider Cards">
+          <h3>Spider Cards</h3>
+        </div>
+      </a>
+
+      <a href="g/stickman-fighter-epic-battle/" class="game-link">
+        <div class="game-card">
+          <img src="g/stickman-fighter-epic-battle/sl/banner.jpg" alt="Stickman Fighter Epic Battle">
+          <h3>Stickman Fighter Epic Battle</h3>
+        </div>
+      </a>
+
+      <a href="g/stickman-fighter-epic-battle2/" class="game-link">
+        <div class="game-card">
+          <img src="g/stickman-fighter-epic-battle2/sl/banner.jpg" alt="Stickman Fighter Epic Battle 2">
+          <h3>Stickman Fighter Epic Battle 2</h3>
+        </div>
+      </a>
+
+      <a href="g/stickman-fighter-mega-brawl/" class="game-link">
+        <div class="game-card">
+          <img src="g/stickman-fighter-mega-brawl/sl/banner.jpg" alt="Stickman Fighter Mega Brawl">
+          <h3>Stickman Fighter Mega Brawl</h3>
+        </div>
+      </a>
+
+      <a href="g/stickman-school-run/" class="game-link">
+        <div class="game-card">
+          <img src="g/stickman-school-run/sl/banner.jpg" alt="Stickman Fighter School Run">
+          <h3>Stickman Fighter School Run</h3>
+        </div>
+      </a>
+
+      <a href="g/subway-surfers-sanfrancisco/" class="game-link">
+        <div class="game-card">
+          <img src="g/subway-surfers-sanfrancisco/sl/banner.jpg" alt="Subway Surfers Sanfrancisco">
+          <h3>Subway Surfers Sanfrancisco</h3>
+        </div>
+      </a>
+
+      <a href="g/subway-surfers-seoul/" class="game-link">
+        <div class="game-card">
+          <img src="g/subway-surfers-seoul/sl/banner.jpg" alt="Subway Surfers Seoul">
+          <h3>Subway Surfers Seoul</h3>
+        </div>
+      </a>
+
+      <a href="g/subway-surfers-shenzhen-showdown/" class="game-link">
+        <div class="game-card">
+          <img src="g/subway-surfers-shenzhen-showdown/sl/banner.jpg" alt="Subway Surfers Shenzhen Showdown">
+          <h3>Subway Surfers Shenzhen Showdown</h3>
+        </div>
+      </a>
+
+      <a href="g/subway-surfers-singapore/" class="game-link">
+        <div class="game-card">
+          <img src="g/subway-surfers-singapore/sl/banner.jpg" alt="Subway Surfers Shenzhen Showdown">
+          <h3>Subway Surfers Singapore</h3>
+        </div>
+      </a>
+
+      <a href="g/subway-surfers-sydney/" class="game-link">
+        <div class="game-card">
+          <img src="g/subway-surfers-sydney/sl/banner.jpg" alt="Subway Surfers Sydney">
+          <h3>Subway Surfers Sydney</h3>
+        </div>
+      </a>
+
+      <a href="g/subway-surfers-vegas-queens/" class="game-link">
+        <div class="game-card">
+          <img src="g/subway-surfers-vegas-queens/sl/banner.jpg" alt="Subway Surfers Vegas Queens">
+          <h3>Subway Surfers Vegas Queens</h3>
+        </div>
+      </a>
+
+      <a href="g/subway-surfers-tokyo/" class="game-link">
+        <div class="game-card">
+          <img src="g/subway-surfers-tokyo/sl/banner.jpg" alt="Subway Surfers Tokyo">
+          <h3>Subway Surfers Tokyo</h3>
+        </div>
+      </a>
+
+      <a href="g/subway-surfers-tokyo-2023/" class="game-link">
+        <div class="game-card">
+          <img src="g/subway-surfers-tokyo-2023/sl/banner.jpg" alt="Subway Surfers Tokyo 2023">
+          <h3>Subway Surfers Tokyo 2023</h3>
+        </div>
+      </a>
+
+      <a href="g/subway-surfers-underwater/" class="game-link">
+        <div class="game-card">
+          <img src="g/subway-surfers-underwater/sl/banner.jpg" alt="Subway Surfers Underwater">
+          <h3>Subway Surfers Underwater</h3>
+        </div>
+      </a>
+
+      <a href="g/subway-surfers-vancouver/" class="game-link">
+        <div class="game-card">
+          <img src="g/subway-surfers-vancouver/sl/banner.jpg" alt="Subway Surfers Underwater">
+          <h3>Subway Surfers Vancouver</h3>
+        </div>
+      </a>
+
+      <a href="g/subway-surfers-zurich/" class="game-link">
+        <div class="game-card">
+          <img src="g/subway-surfers-zurich/sl/banner.jpg" alt="Subway Surfers Zurich">
+          <h3>Subway Surfers Zurich</h3>
+        </div>
+      </a>
+
+      <a href="g/subway-surfers-venice/" class="game-link">
+        <div class="game-card">
+          <img src="g/subway-surfers-venice/sl/banner.jpg" alt="Subway Surfers Venice">
+          <h3>Subway Surfers Venice</h3>
+        </div>
+      </a>
+
+      <a href="g/subway-surfers-winter-holiday/" class="game-link">
+        <div class="game-card">
+          <img src="g/subway-surfers-winter-holiday/sl/banner.jpg" alt="Subway Surfers Winter Holiday">
+          <h3>Subway Surfers Winter Holiday</h3>
+        </div>
+      </a>
+
+      <a href="g/subway-surfers-winter-wonderland/" class="game-link">
+        <div class="game-card">
+          <img src="g/subway-surfers-winter-wonderland/sl/banner.jpg" alt="Subway Surfers Winter Wonderland">
+          <h3>Subway Surfers Winter Wonderland</h3>
+        </div>
+      </a>
+
+      <a href="g/subway-surfers-year-of-the-snake/" class="game-link">
+        <div class="game-card">
+          <img src="g/subway-surfers-year-of-the-snake/sl/banner.jpg" alt="Subway Surfers Year Of The Snake">
+          <h3>Subway Surfers Year Of The Snake</h3>
+        </div>
+      </a>
     </div>
   </section>
 
-<!-- =================== ADS =================== -->
- <div id="banner1"></div>
-  
-  <!-- ================= GAMES ================= -->
-  <main>
-    <!-- ================= RECENTLY PLAYED ================= -->
-    <section id="recently-played" style="display:none;">
-      <h2 class="section-title">🕹️ Recently Played</h2>
-      <div class="games-container" id="recent-container"></div>
-    </section>
+  <!-- Categories Section -->
+  <section class="section">
+    <h2>Categories</h2>
 
-    <!-- ================= RECENTLY PLAYED ================= -->
-    <section id="games">
-      <h2 class="section-title">🔥 Play Online Games</h2>
-      <div class="games-container"></div>
-    </section>
-  </main>
-
-<!-- ================= ADS ================= -->
-<div id="banner2"></div>
-  
-  <!-- ================= FOOTER ================= -->
-  <footer class="site-footer">
-    <div class="footer-container">
-      <!-- Left -->
-      <div class="footer-left">
-        <div class="brand">
-          <div class="company-logo"></div>
-          <h2 class="company-name"></h2>
-        </div>
-        <p class="dev-company">Developed by <span class="company-owner"></p>
-        <div class="footer-socials" id="footer-socials"></div>
-      </div>
-
-      <!-- Right -->
-      <div class="footer-right">
-        <div class="footer-column">
-          <h4>Get To Know Us</h4>
-          <a href="about.html">About</a>
-          <!-- <a href="#"><span class="company-name"></span> for Developers</a> -->
-        </div>
-        <div class="footer-column">
-          <h4>Privacy and Terms</h4>
-          <a href="privacypolicy.html">Privacy Center</a>
-        </div>
-        <div class="footer-column">
-          <h4>Help and Support</h4>
-          <!-- <a href="/faq.html">FAQ</a> -->
-          <a href="contact.html">Contact US</a>
-        </div>
-      </div>
+    <div class="grid categories-grid">
+      <div class="card">Action</div>
+      <div class="card">Adventure</div>
+      <div class="card">Racing</div>
+      <div class="card">Puzzle</div>
+      <div class="card">Shooting</div>
+      <div class="card">Sports</div>
+      <div class="card">Strategy</div>
+      <div class="card">Arcade</div>
+      <div class="card">Multiplayer</div>
+      <div class="card">RPG</div>
+      <div class="card">Casual</div>
+      <div class="card">Kids</div>
+      <div class="card">3D</div>
+      <div class="card">2D</div>
+      <div class="card">Survival</div>
+      <div class="card">Simulation</div>
+      <div class="card">War</div>
+      <div class="card">Zombie</div>
+      <div class="card">Fantasy</div>
+      <div class="card">Horror</div>
     </div>
-    <p class="footer-bottom">
-      &copy; <span id="year"></span> <span class="website-name"></span>. All rights reserved. <br>
-      Powered by <strong><span class="company-owner"></strong>
-    </p>
+  </section>
+
+  <!-- Description Section -->
+  <section class="section">
+    <div class="description-box">
+      <h2>About Zipy</h2>
+      <h1>Online Games at Zipy</h1>
+      <p>
+      Zipy is the ultimate playground with over 1500 free online games. We offer instant play to all our games without downloads, login, popups or other distractions. Each month, over 100 million players join Zipy to play, share, and discover the best games on the web.</br></br>Wanna play?
+      </p>
+      <h3>Our game selection</h3>
+      <p>
+        Looking for fun games, cool games, or even crazy games? You'll find them all right here.</br></br>Zipy is home to a curated collection of the best video games for your browser. Every title is carefully selected to make sure it's fun, creative, and feels great to play on mobile, tablet, or desktop. Game developers release new games on our platform on a daily basis, so there is always something new to discover.</br></br>Exclusive games make Zipy stand out. Alongside global hits, we feature titles you won't find anywhere else on the web.
+      </p>
+      <ul class="game-text-list">
+        <li><a href="g/subway-surfers-seoul/" class="game-link">Subway Surfers Seoul</a></li>
+        <li><a href="g/level-devil/" class="game-link">Level Devil</a></li>
+        <li><a href="g/eggy-car/" class="game-link">Eggy Car</a></li>
+        <li><a href="g/slither-io/" class="game-link">Slither.io</a></li>
+      </ul>
+      <h3>Looking for what's popular right now?</h3>
+      <ul class="game-text-list">
+        <li>
+          <a href="g/hextris/" class="game-link">Hextris</a>
+          – Run your own store, stock bananas, and keep customers happy.
+        </li>
+
+        <li>
+          <a href="g/hill-climb-racing/" class="game-link">Hill Climb Racing Lite</a>
+          – Race up steep hills and across wild terrain in this fast driving challenge.
+        </li>
+        <li>
+          <a href="g/stickman-fighter-epic-battle/" class="game-link">Stickman Fighter Epic Battle</a>
+          – Swing and soar through colorful levels with perfect timing.
+        </li>
+      </ul>
+      <h3>Explore a world of game categories</h3>
+      <p>Puzzles? Battleships? Multiplayer Games? What do you feel like playing today?</br></br>We have 200 categories to help you discover your favorite game. You can explore them through the top menu or by scrolling down on any game or category page. The big tiles on highlight the popular free video games you shouldn't miss.</br></br>Not sure where to start? Check out our most popular genres and find the game that matches your mood:
+      </p>
+      <ul class="game-text-list">
+        <li><a href="#" class="game-link">Car Games</a></li>
+        <li><a href="#" class="game-link">Puzzle Games</a></li>
+        <li><a href="#" class="game-link">.io Games</a></li>
+        <li><a href="#" class="game-link">Football Games</a></li>
+      </ul>
+      <h3>Keeping games free</h3>
+      <p>zipygames.github.io stays free for everyone by showing ads during your visit. These ads help keep the platform running and support the developers who create your favorite games, so you can keep playing without paying.</br></br>If you have an Android, you can also try out our Zipy app. It is also free and works on your Chromebook, mobile, or tablet. Download it now and take the fun with you!</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 Zipy. All rights reserved.</p>
   </footer>
 
-  <!-- ================= SCRIPTS ================= -->
-  <script src="config.js"></script>
-  <script src="GoogleAdsManager.js"></script>
-  <script>
-     const ads = new GoogleAdsManager("ca-pub-9301267932926503");
-     ads.loadAutoAds();
-    ads.loadAdUnit("banner1", "3089669868", "auto");
-  ads.loadAdUnit("banner2", "3089669868", "auto");
-  </script>
-
-  <script src="script.js"></script>
 </body>
-
 </html>

@@ -1,398 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Level Devil - Fun HTML5 Game | Zipy Games by Microbuzz Tech</title>
-<meta name="description" content="Play Level Devil, a fun HTML5 game by Zipy Games by Microbuzz Tech. Enjoy exciting levels and challenge your skills directly in your browser.">
-<meta name="keywords" content="Level Devil, HTML5 game, browser game, Zipy Games by Microbuzz Tech, online games, free games">
-<meta name="author" content="Zipy Games by Microbuzz Tech">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon.ico">  
-<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"/>
-<link rel="stylesheet" href="../../style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<!-- Schema.org structured data -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "VideoGame",
-  "name": "Level Devil",
-  "author": { "@type": "Organization", "name": "Zipy Games by Microbuzz Tech" },
-  "genre": "Platformer",
-  "operatingSystem": "Web Browser",
-  "applicationCategory": "Game",
-  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.2", "ratingCount": "1500" },
-  "url": "../../G/level-devil/"
-}
-</script>
+  <title>LEVEL DEVIL – Play Online For Free! | Zipy Games</title>
+  <meta name="description" content="Level Devil is a hilariously cruel 2D platformer known for its deceptive gameplay built around unpredictable dangers and trolling mechanics. Think classic arcade-style platforming meets the laugh-through-the-anger spirit of today's rage games. Only smarter, funnier, and harder to put down."/>
+  <meta name="keywords" content="Level Devil, level devil unblocked, level devil online, level devil, Best Online Platform Game, Zipy Games by Microbuzz Tech, online games, free games">
+  <meta name="author" content="Zipy Games by Microbuzz Tech">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico">  
 
-<style>
-/* --- Base Styles --- */
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Poppins', sans-serif;
-  background: radial-gradient(circle at top, #43206f, #1c0936);
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  color: #fff;
-  transition: background 0.4s, color 0.4s;
-}
-[data-animate] {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
-}
-[data-animate].visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-header, footer { width: 100%; flex-shrink: 0; }
-main {
-  flex: 1;
-  width: 100%;
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 30px 20px 50px;
-  box-sizing: border-box;
-  position: relative;
-  z-index: 2;
-}
-/* --- Banner --- */
-.banner-full {
-  position: relative;
-  width: 100%;
-  height: 400px;
-  overflow: hidden;
-  border-radius: 0 0 25px 25px;
-  margin-bottom: -120px;
-  z-index: 1;
-}
-.banner-full img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  filter: blur(5px) brightness(0.8);
-  transform: scale(1.1);
-}
-/* --- Game Header --- */
-.game-header {
-  background-color: rgba(27, 11, 59, 0.95);
-  border-radius: 20px;
-  padding: 25px 30px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
-  margin-bottom: 30px;
-  margin-top: 150px;
-}
-.game-info {
-  display: flex; align-items: center; gap: 20px; flex: 1;
-}
-.game-icon {
-  width: 110px; height: 110px; border-radius: 18px; overflow: hidden; flex-shrink: 0;
-}
-.game-icon img { width: 100%; height: 100%; object-fit: cover; }
-.game-text h1 {
-  font-family: 'Press Start 2P', cursive;
-  font-size: 20px;
-  margin: 0;
-  color: #fff;
-}
-.developer { font-size: 14px; color: #ccc; margin-top: 8px; }
-.stats { display: flex; gap: 18px; flex-wrap: wrap; margin-top: 10px; font-size: 13px; color: #bbb; }
-.play-btn {
-  background: linear-gradient(45deg, #ff416c, #ff4b2b);
-  color: #fff; border: none; border-radius: 12px; padding: 14px 28px;
-  font-weight: 600; font-size: 16px; text-decoration: none;
-  transition: all 0.3s ease;
-}
-.play-btn:hover { transform: scale(1.05); box-shadow: 0 0 20px rgba(255,75,43,0.6); }
-/* --- Floating Play Button --- */
-.floating-play {
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  background: linear-gradient(45deg, #ff416c, #ff4b2b);
-  border-radius: 50%;
-  width: 65px;
-  height: 65px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 28px;
-  color: white;
-  cursor: pointer;
-  box-shadow: 0 0 20px rgba(255,75,43,0.6);
-  z-index: 1000;
-  transition: transform 0.3s ease;
-}
-.floating-play:hover { transform: scale(1.1); }
-/* --- Ads --- */
-.ad-slot {
-  width: 100%;
-  min-height: 90px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 30px auto;
-}
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600&family=Orbitron:wght@500;600;700&display=swap" rel="stylesheet">
 
-/* --- Screenshots --- */
-.screenshots {
-  display: flex; gap: 15px;
-  overflow-x: auto; padding: 15px 0;
-  scroll-behavior: smooth;
-  scrollbar-width: none; -ms-overflow-style: none;
-}
-.screenshots::-webkit-scrollbar { display: none; }
-.screenshots img {
-  height: 220px; border-radius: 15px; object-fit: cover;
-  flex-shrink: 0; cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
-}
-.screenshots img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 15px rgba(255,255,255,0.4);
-}
-.swipe-hint {
-  text-align: center; font-size: 13px; color: #bbb; margin-top: 8px;
-}
-/* --- Lightbox --- */
-.lightbox {
-  margin-top: 70px;
-  display: none; position: fixed; z-index: 999;
-  top: 0; left: 0; width: 100%; height: 100%;
-  background: rgba(0, 0, 0, 0.9);
-  justify-content: center; align-items: center;
-  backdrop-filter: blur(10px);
-}
-.lightbox-img {
-  max-width: 90%; max-height: 85%;
-  border-radius: 20px; box-shadow: 0 0 25px rgba(255,255,255,0.2);
-}
-.lightbox .close {
-  position: absolute; top: 25px; right: 40px;
-  font-size: 40px; color: #fff; cursor: pointer; font-weight: bold;
-  transition: transform 0.2s ease;
-}
-.lightbox .close:hover { transform: scale(1.2); }
-/* --- Description --- */
-.description {
-  margin-top: 30px; line-height: 1.6; font-size: 16px; color: #ddd;
-  background: rgba(255, 255, 255, 0.05);
-  padding: 25px; border-radius: 15px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
-}
-.description h2 {
-  margin-top: 0; font-family: 'Press Start 2P', cursive;
-  font-size: 18px; margin-bottom: 15px; color: #fff;
-}
-.features { margin-top: 20px; padding-left: 20px; }
-.features li { margin-bottom: 10px; }
-
-/* ===========================
-   🎮 Related Games (Zipy Games Style)
-   =========================== */
-
-.related-games {
-  margin-top: 60px;
-  padding: 20px;
-  text-align: center;
-}
-
-.related-games h2 {
-  font-family: 'Press Start 2P', cursive;
-  font-size: 1.4rem;
-  color: var(--primary, #00ffcc);
-  margin-bottom: 30px;
-  letter-spacing: 1px;
-}
-
-/* 🔹 Game Grid Layout */
-.related-games .game-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 25px;
-  justify-content: center;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-/* 🔹 Game Card Style */
-.related-games .game-grid a {
-  display: block;
-  text-decoration: none;
-  background: var(--bg-card, #171717);
-  border-radius: 18px;
-  overflow: hidden;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
-  transition: all 0.3s ease;
-  cursor: pointer;
-  position: relative;
-}
-
-.related-games .game-grid a img {
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
-  border-radius: 18px;
-  transition: transform 0.3s ease;
-}
-
-/* Game title text */
-.related-games .game-grid a span {
-  display: block;
-  padding: 10px 6px 14px;
-  font-size: 0.95rem;
-  font-weight: 600;
-  color: #f5f5f5;
-  text-align: center;
-  text-transform: capitalize;
-  transition: color 0.3s ease;
-}
-
-/* 🔹 Hover Effects */
-.related-games .game-grid a:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.6);
-}
-
-.related-games .game-grid a:hover img {
-  transform: scale(1.07);
-}
-
-.related-games .game-grid a:hover span {
-  color: var(--primary, #00ffcc);
-}
-
-/* 🔹 Mobile Responsive */
-@media (max-width: 768px) {
-  .related-games h2 {
-    font-size: 1.1rem;
-  }
-
-  .related-games .game-grid {
-    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-    gap: 15px;
-  }
-
-  .related-games .game-grid a span {
-    font-size: 0.85rem;
-  }
-}
-
-</style>
+  <!-- CSS -->
+  <link rel="stylesheet" href="gstyle.css">
 </head>
 
 <body>
-<div id="header-container"></div>
 
-<!-- Floating Play Button -->
-<a href="#" class="floating-play">▶</a>
-
-<!-- Banner -->
-<!-- <div class="banner-full">
-  <img src="" alt="Level Devil Banner Background" loading="lazy">
-</div> -->
+<!-- ================= HEADER ================= -->
+<header class="header">
+  <div class="logo">
+    <img src="../../assets/logo.png" alt="Zipy Logo" class="logo-img">
+    <span class="logo-text">Zipy Games</span>
+  </div>
+</header>
 
 <main>
-  <div class="game-header" data-animate>
-    <div class="game-info">
-      <div class="game-icon"><img src="" alt="Level Devil Icon" loading="lazy"></div>
-      <div class="game-text">
-        <h1></h1>
-        <div class="developer"></div>
-        <div class="stats"></div>
+
+<!-- ================= GAME INFO ================= -->
+<section class="section">
+  <div class="game-info-card">
+
+    <div class="game-left">
+      <img src="favicon.ico" class="game-icon" alt="Level Devil">
+      <div>
+        <h1 class="game-title">Level Devil</h1>
+        <p class="game-subtitle">A tricky platform game full of traps</p>
+
+        <div class="game-tags">
+          <span>Platformer</span>
+          <span>2D</span>
+          <span>Single Player</span>
+        </div>
       </div>
     </div>
-    <a href="#" class="play-btn">▶ Play Now</a>
+
+    <a href="page.html" class="play-btn">▶ Play Now</a>
+
   </div>
+</section>
 
-  <div class="ad-slot">
-    <div id="banner1"></div>
+<!-- ================= SCREENSHOTS ================= -->
+<section class="section">
+  <h2>Screenshots</h2>
+  <div class="screenshots">
+    <img src="sl/banner.jpg">
+    <img src="sl/snap1.png">
+    <img src="sl/snap2.jpg">
+    <img src="sl/snap3.jpg">
+    <img src="sl/snap4.jpg">
+    <img src="sl/snap5.png">
   </div>
+</section>
 
-
-  <!-- Screenshots -->
-  <div class="screenshots" data-animate></div>
-  <div class="swipe-hint">👉 Swipe to explore screenshots</div>
-
-  <!-- Lightbox -->
-  <div id="lightbox" class="lightbox">
-    <span class="close">&times;</span>
-    <img class="lightbox-img" src="" alt="Screenshot Preview">
+<!-- ================= DESCRIPTION ================= -->
+<section class="section">
+  <div class="description-box">
+    <h1>Level Devil</h1>
+    <p>
+      Level Devil is a hilariously cruel 2D platformer known for its deceptive gameplay built around unpredictable dangers and trolling mechanics. Think classic arcade-style platforming meets the laugh-through-the-anger spirit of today's rage games. Only smarter, funnier, and harder to put down.</br></br>Not your average side-scroller, Level Devil is a devilishly clever game pushing your reflexes, patience, and determination to the limit. You play as a tiny pixel hero on a simple mission: to reach the door on the other side of the stage and get out. Sounds easy, right? Think again.</br></br>The best part? You can play the official browser version of Level Devil only on Zipy, a free, instant-play edition made together with its creator. The game exploded on YouTube, with creators screaming, laughing, and always coming back for more. That mix of pain and fun turned Level Devil into a global rage-game phenomenon. And the devil isn’t done yet: Unept has already teased even more levels on the way with “new stages to love and hate.”
+    </p></br></br>
+    <h2>How to Play</h2>
+    <h3>Controls</h3>
+    <p>The controls are intuitive and easy to pick up:</p>
+    <ul class="game-text-list">
+      <li>
+        Desktop: Move with <strong>A</strong> (left), <strong>D</strong> (right), <strong>W</strong> (jump), or the <strong>arrow keys</strong>, and jump with the <strong>spacebar</strong> or <strong>up arrow</strong>. Press <strong>ESC</strong> to pause, and when you fail, tap any key to restart instantly.
+      </li>
+      <li>
+        Mobile: Use the on-screen <strong>arrow buttons</strong> to move and the <strong>up arrow</strong> to jump. Tap the <strong>menu icon</strong> to pause, and tap the screen to restart right away.
+      </li>
+    </ul></br></br>
+    <h3>Gameplay</h3>
+    <p>
+      In Level Devil, the player must guide the character to the exit door using simple movements - move, jump, survive. But don't get too confident, because every stage hides surprises designed to catch you off guard. Here's what to expect once you start running:
+    </p>
+    <ul class="game-text-list">
+      <li>
+        Floors can vanish without warning, sending you straight into danger.
+      </li>
+      <li>
+        Spikes might pop up from nowhere, even on paths that looked perfectly safe a second ago.
+      </li>
+      <li>
+        Swinging saws appear right when you least expect them.
+      </li>
+      <li>
+        Doors can disappear, move, or even trap you before you make your escape.
+      </li>
+      <li>
+        Gravity can suddenly shift, controls can flip, and fake platforms might explode the moment you step on them.
+      </li>
+    </ul>
+    <p>So learn fast, stay sharp, and don't forget: nothing in Level Devil is ever as simple as it looks.</p></br></br>
+    <h3>Progression</h3>
+    <p>The game unfolds across three chapters of escalating difficulty: Level Devil, Level Devil-er, and Level Devil-est.</p>
+    <ul class="game-text-list">
+      <li>
+        Level Devil: The first chapter eases you in with classic traps like pits, spikes, springs, and crumbling platforms.
+      </li>
+      <li>
+        Level Devil-er: adds new mechanics like bombs, levers, jetpacks, and inverted gravity, keeping you constantly on edge.
+      </li>
+      <li>
+        Level Devil-est: Now the game goes full trickster mode with revolving obstacles, moving hills, timed explosions, and thorny hazards that seem alive. Just when you think you've mastered every pattern, the next chapter proves you haven't seen anything yet.
+      </li>
+    </ul></br></br>
+    <h3>Stages & Doors</h3>
+    <p>
+      Level Devil is split into 16 doors, each hiding five short but brutal stages. Clear one to unlock the next, and brace yourself, because the deeper you go, the meaner the tricks get. Quit halfway through, and you'll have to start that door from scratch.</br></br>With nearly <strong>200 handcrafted stages</strong>, every part of the run is packed with new surprises that test your skills. Later levels flip the script with <strong>reversed controls</strong>, gravity that sticks you to the floor when you try to jump, and teleporting warps that send you off-screen.</br></br>Make it to the final door and you'll face the ultimate challenge: the demon king's area, where you will witness an epic ending.
+    </p></br></br>
+    <h3>Every Fail Brings You Closer to Victory</h3>
+    <p>
+      <strong>In Level Devil, failure isn't the end, it's part of the journey. One of the most satisfying features is the instant respawn, which takes you back to the start of your current level in a split second.</strong></br></br>Every death teaches you something new, where spikes appear, how gravity shifts, or when a door might vanish, and that learning curve is the real reward. The game turns frustration into progress, pushing you to laugh, retry, and outsmart the devil one trap at a time.
+    </p>
+    <h3>Easter Eggs</h3>
+    <p>
+      Hidden within this tricky platformer are secret purple keys waiting to be discovered in the most unexpected places. Players might find them behind invisible platforms, inside crates, or by triggering hidden mechanics like bullet dispensers and false walls.</br></br><strong>Collect all ten</strong> to unlock a <strong>secret level</strong> that leads to the game's <strong>true ending</strong>, marked by the mysterious <strong>double-purple door</strong>. To access it, open the settings menu and wait a few seconds for the hidden option to appear.</br></br>It's a sly reward for players sharp enough to outsmart every trap and uncover the game's final twist.
+    </p></br></br>
+    <h2>Multiplayer Mode</h2>
+    <p>
+      You can jump into Level Devil solo or turn up the chaos with <strong>2-player mode</strong>. Single player is already wild, but with a friend it's double the laughs, double the fails, and double the trash talk.</br></br>Race to the exit, trigger traps to trip each other up, or swap turns to see who survives longer. It's competition, comedy, and a little bit of mischief all rolled into one.
+    </p></br></br>
+    <h2>Level Devil Survival Guide</h2>
+    <p>Our team has played through every stage to bring you smart tips that cut down frustration and give you an edge.</p>
+    <h3>General Tips for New Players</h3>
+    <ul class="game-text-list">
+      <li>
+        Take it slow: observe hazards before making your move.
+      </li>
+      <li>
+        If controls suddenly feel off, test them first before committing.
+      </li>
+      <li>
+        Remember: in gravity-flip stages, space makes you stick instead of jump.
+      </li>
+      <li>
+        Be ready to die once to learn a gate's trick.
+      </li>
+    </ul></br></br>
+    <h3>Advanced Tips for Stuck Players</h3>
+    <ul class="game-text-list">
+      <li>
+        Experiment with routes: the obvious path isn't always the fastest.
+      </li>
+      <li>
+        Keep practicing your timing until tough jumps feel natural.
+      </li>
+      <li>
+        Stay calm under pressure and you'll handle even the most intense stages.
+      </li>
+    </ul></br></br>
+    <p>
+      If you're still stuck after a few tries, a "Skip Level" button will pop up. You can use it to move past your current stage and keep your progress rolling. Our advice: save it for when you really need it.
+    </p></br></br>
+    <h2>Similar Games like Level Devil</h2>
+    <p>
+      If Level Devil keeps you hooked, you'll love other tricky platformers on Zipy. Try Fancy Pantsadventures for smooth acrobatics, or swing your way through Stickman Hook for a lighter, rage-free challenge. Fans of sneaky traps should check out Big Tower Tiny Square, while stretchy mayhem awaits in Silly Sausage.</br></br>You can also play more games from Unept right here on Zipy, including Into the Pit and Unicycle Hero, both packed with the same cheeky, devilish energy.
+    </p></br></br>
+    <h2>Who Created Level Devil?</h2>
+    <p>
+      A solo developer Adam Corey, better known as Unept, originally built this game as a joke to troll his friends, but that prank turned into one of <strong>2024's biggest indie hits</strong>.
+    </p>
   </div>
+</section>
 
-  <!-- Description -->
-  <div class="description" data-animate>
-    <h2>About this game</h2>
-    <p></p>
-    <ul class="features"></ul>
+<!-- ================= RELATED GAMES ================= -->
+<!-- <section class="section">
+  <h2>Related Games</h2>
+
+  <div class="related-games-grid">
+
+    <a href="#" class="game-link">
+      <div class="game-card">
+        <img src="icon.png" alt="Level Devil">
+        <h3>Level Devil</h3>
+      </div>
+    </a>
+
+    <a href="#" class="game-link">
+      <div class="game-card">
+        <img src="icon.png" alt="Trap Game">
+        <h3>Trap Game</h3>
+      </div>
+    </a>
+
+    <a href="#" class="game-link">
+      <div class="game-card">
+        <img src="icon.png" alt="Jump King">
+        <h3>Jump King</h3>
+      </div>
+    </a>
+
+    <a href="#" class="game-link">
+      <div class="game-card">
+        <img src="icon.png" alt="Pixel Run">
+        <h3>Pixel Run</h3>
+      </div>
+    </a>
+
+    <a href="#" class="game-link">
+      <div class="game-card">
+        <img src="icon.png" alt="Spike World">
+        <h3>Spike World</h3>
+      </div>
+    </a>
+
+    <a href="#" class="game-link">
+      <div class="game-card">
+        <img src="icon.png" alt="Hard Floor">
+        <h3>Hard Floor</h3>
+      </div>
+    </a>
+
   </div>
+</section> -->
 
-  <div class="ad-slot">
-    <div id="banner2"></div>
-  </div>
-
-
-  <!-- Related Games -->
-  <div class="related-games" data-animate>
-    <h2>More Games by Zipy</h2>
-    <div class="game-grid"></div>
-  </div>
-
-  <div class="ad-slot">
-    <div id="banner3"></div>
-  </div>
 
 </main>
 
-<div id="footer-container"></div>
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <p>© 2025 Zipy. All rights reserved.</p>
+</footer>
 
-<!-- Scripts -->
-<script src="../../layout.js"></script>
-<script src="../../config.js"></script>
-<script src="game-setup.js"></script>
-<script src="../../GoogleAdsManager.js"></script>
-
-<script>
-// --- Lightbox ---
-document.addEventListener("click", e => {
-  if (e.target.matches(".screenshots img")) {
-    const lightbox = document.getElementById("lightbox");
-    document.querySelector(".lightbox-img").src = e.target.src;
-    lightbox.style.display = "flex";
-  } else if (e.target.matches(".lightbox, .lightbox .close")) {
-    document.getElementById("lightbox").style.display = "none";
-  }
-});
-
-// --- Animation on scroll ---
-const elements = document.querySelectorAll('[data-animate]');
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) entry.target.classList.add('visible');
-  });
-}, { threshold: 0.1 });
-elements.forEach(el => observer.observe(el));
-</script>
-
-<!-- PWA placeholders -->
-<link rel="manifest" href="manifest.json">
-<script>
-  // --- Ads ---
-    window.onload = () => {
-      const ads = new GoogleAdsManager("ca-pub-9301267932926503");
-      ads.loadAutoAds();
-      ads.loadAdUnit("banner1", "3089669868", "auto");
-      ads.loadAdUnit("banner2", "3089669868", "auto");
-      ads.loadAdUnit("banner3", "3089669868", "auto");
-    };
-</script>
 </body>
 </html>
