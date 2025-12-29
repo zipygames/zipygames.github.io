@@ -22,7 +22,19 @@
 
   <!-- style call -->
   <link rel="stylesheet" href="style.css" />
-
+  <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+  <script>
+    window.OneSignalDeferred = window.OneSignalDeferred || [];
+    OneSignalDeferred.push(async function(OneSignal) {
+      await OneSignal.init({
+        appId: "c5564b66-2b6d-4fb4-a06b-4af3fa5809c1",
+        safari_web_id: "web.onesignal.auto.504512c8-952a-4d80-9d02-48e16e3cc659",
+        notifyButton: {
+          enable: true,
+        },
+      });
+    });
+  </script>
 </head>
 <body>
 
@@ -356,3 +368,4 @@
 
 </body>
 </html>
+
